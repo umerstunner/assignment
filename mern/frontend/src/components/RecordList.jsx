@@ -42,6 +42,7 @@ export default function RecordList() {
   useEffect(() => {
     async function getRecords() {
       const response = await fetch(`http://localhost:5050/record`);
+      //isne boht tng kia hy
       if (!response.ok) {
         const message = `An error occurred: ${response.statusText}`;
         console.error(message);
